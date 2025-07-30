@@ -1,5 +1,18 @@
 MAD-STAMP METADATA-ANTWERPDESIGNS-STAMP
 
+---
+**Antwerp Designs Neon Email Signature**
+
+- **Author:** Johan Wilhelm van Antwerp | AntwerpDesignsIonity | Policy 986 | ORCID: 0009-0005-7181-0347
+- **All rights reserved | TM² | CC | 2018-2025**
+- **META:**
+    - Project: Antwerp Designs, Ionity, Project Alpha, van Antwerp Designs, ORCHID
+    - Author & Creator: Johan Wilhelm van Antwerp (ID: 9003135105083)
+    - Contact: johan@antwerpdesigns.com | johan@ionityearth.shop | antwerp.ai@gmail.com | +27 75 411 0887 | ZAR
+    - Location: Pretoria, Gauteng, South Africa | IP: 41.150.251.82
+
+---
+
 MAD-Metadata-Antwerp-Designs Web Application
 Version 7 (Web-based, hosted at www.antwerpdesigns.com/mad)
 Author: Johan Wilhelm van Antwerp
