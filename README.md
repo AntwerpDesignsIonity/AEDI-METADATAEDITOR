@@ -19,39 +19,45 @@ MAD-STAMP METADATA-ANTWERPDESIGNS-STAMP takes metadata management to the next le
 
 This approach is protected under the Antwerp Designs license and is part of a broader, evolving network of digital integrity tools since 2023.
 
-MAD-STAMP METADATA-ANTWERPDESIGNS-STAMP (AEDI) is a simple yet powerful web application for embedding, managing, and editing metadata within images or data files—while preserving file integrity and ensuring metadata is non-removable without extraction. From Version 7 onwards, AEDI is fully web-based and part of the broader Antwerp Designs and Ionity ecosystem.
+MAD-STAMP METADATA-ANTWERPDESIGNS-STAMP (AEDI) is a powerful Python-based web application for embedding, managing, and editing metadata within images, audio files, and documents—while preserving file integrity and ensuring metadata is securely embedded. The application features a modern HTML/CSS/JavaScript GUI that runs locally in a Python virtual environment.
 
 This project is protected under the Antwerp Designs license. The concept, methods, and codebase are part of a larger network in development since 2023.
 Features
 
-    Add, edit, and manage metadata in images or data files, keeping files intact
-    Integrity-preserving: Metadata is not easily removable without intentional extraction
-    Clean web-based interface (see live: www.antwerpdesigns.com/mad)
-    Collaboration-ready: Designed for integration with the Antwerp Designs and Ionity platforms
+    ✨ **Stamp Metadata**: Embed metadata into files using Base64 encoding
+    🔍 **View Metadata**: Extract and view embedded metadata
+    🗑️ **Remove Metadata**: Disable/remove metadata from files
+    📁 **Multiple File Types**: Support for images (JPG, PNG, GIF, etc.), audio (MP3, FLAC, etc.), and documents (PDF, TXT)
+    🌐 **Web GUI**: Modern, responsive HTML interface
+    🐍 **Python-Based**: Runs in a Python virtual environment
+    🔒 **Secure**: Uses industry-standard metadata embedding techniques
+    📂 **Folder Support**: Batch process entire folders
 
 Getting Started
 Prerequisites
 
-    Node.js (latest LTS recommended)
-    npm or yarn
+    Python 3.8 or higher
+    pip (Python package manager)
 
 Installation
-bash
 
+```bash
 git clone https://github.com/AntwerpDesignsIonity/AEDI-METADATAEDITOR.git
 cd AEDI-METADATAEDITOR
-npm install
-# or
-yarn install
+bash setup.sh
+```
 
 Running the Application
-bash
 
-npm start
-# or
-yarn start
+```bash
+# Activate virtual environment
+source venv/bin/activate
 
-Visit http://localhost:3000 in your browser or access the hosted version at www.antwerpdesigns.com/mad.
+# Start the application
+python app.py
+```
+
+Visit http://localhost:5000 in your browser to access the metadata editor.
 Project Metadata
 
     Project: Antwerp Designs, Ionity, Project Alpha, van Antwerp Designs, ORCHID

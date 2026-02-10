@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAD-STAMP Metadata Editor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏷️ MAD-STAMP Metadata Editor</h1>
+            <p class="subtitle">Antwerp Designs Ionity - Metadata Management System</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Upload Section -->
+            <section class="card upload-section">
+                <h2>📁 Upload File</h2>
+                <div class="upload-area" id="uploadArea">
+                    <input type="file" id="fileInput" accept=".jpg,.jpeg,.png,.gif,.bmp,.tiff,.webp,.mp3,.mp4,.m4a,.flac,.pdf,.txt">
+                    <div class="upload-prompt">
+                        <span class="upload-icon">📤</span>
+                        <p>Click to select a file or drag and drop</p>
+                        <p class="upload-hint">Supported: Images, Audio, PDF, Text</p>
+                    </div>
+                </div>
+                <div id="fileInfo" class="file-info hidden"></div>
+            </section>
+
+            <!-- Metadata Form Section -->
+            <section class="card metadata-section hidden" id="metadataSection">
+                <h2>📝 Metadata Information</h2>
+                
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="Enter title">
+                </div>
+
+                <div class="form-group">
+                    <label for="author">Author / Creator</label>
+                    <input type="text" id="author" placeholder="Enter author name">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="3" placeholder="Enter description"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="tags">Tags (comma-separated)</label>
+                    <input type="text" id="tags" placeholder="art, design, photography">
+                </div>
+
+                <div class="form-group">
+                    <label for="copyright">Copyright Information</label>
+                    <input type="text" id="copyright" placeholder="© 2026 Your Name. All rights reserved.">
+                </div>
+
+                <div class="form-group">
+                    <label for="customFields">Custom Fields (JSON)</label>
+                    <textarea id="customFields" rows="3" placeholder='{"key": "value", "license": "CC BY-NC-SA"}'></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-primary" id="stampBtn">
+                        <span>✨ Stamp Metadata</span>
+                    </button>
+                    <button class="btn btn-secondary" id="extractBtn">
+                        <span>🔍 View Existing Metadata</span>
+                    </button>
+                    <button class="btn btn-warning" id="removeBtn">
+                        <span>🗑️ Remove Metadata</span>
+                    </button>
+                    <button class="btn btn-success hidden" id="downloadBtn">
+                        <span>⬇️ Download File</span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- Metadata Display Section -->
+            <section class="card metadata-display hidden" id="metadataDisplay">
+                <h2>📊 Metadata View</h2>
+                <div id="metadataContent"></div>
+            </section>
+
+            <!-- Status Messages -->
+            <div id="statusMessages"></div>
+        </div>
+
+        <footer>
+            <p>MAD-STAMP Metadata Editor v1.0.0</p>
+            <p>Created by Johan Wilhelm van Antwerp | Antwerp Designs & Ionity</p>
+            <p>License: Creative Commons 4.0 BY-NC-SA</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
