@@ -210,7 +210,13 @@ The application provides several REST API endpoints:
 - Uploaded files are automatically secured with `secure_filename()`
 - Maximum file size is limited to 50MB
 - The application runs on localhost by default
-- For production use, configure proper authentication and HTTPS
+- **Debug mode is disabled by default** for security
+  - Enable debug mode only in development: `DEBUG=true python app.py`
+- For production use, configure:
+  - Proper authentication and HTTPS
+  - A production WSGI server (e.g., Gunicorn, uWSGI)
+  - Firewall rules and access controls
+  - Regular security updates
 
 ## Advanced Usage
 

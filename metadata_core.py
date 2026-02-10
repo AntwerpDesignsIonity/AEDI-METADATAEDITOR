@@ -315,8 +315,8 @@ class MetadataStamp:
                 img.save(output_path)
                 return True
             elif file_type in ['audio', 'document']:
-                # For audio and documents, this would require more complex handling
-                # For now, we'll create a copy without the MAD-STAMP fields
+                # For audio and documents, metadata removal requires more complex handling
+                # Not currently implemented
                 return False
             else:
                 # Remove sidecar file if exists

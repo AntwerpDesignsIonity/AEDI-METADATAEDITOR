@@ -213,10 +213,16 @@ def clear_uploads():
 
 
 if __name__ == '__main__':
+    import os
+    
     print("=" * 60)
     print("MAD-STAMP Metadata Editor")
     print("=" * 60)
     print("Starting web server on http://localhost:5000")
     print("Press Ctrl+C to stop")
     print("=" * 60)
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    
+    # Only enable debug mode in development
+    # For production, set DEBUG=False in environment
+    debug_mode = os.environ.get('DEBUG', 'False').lower() == 'true'
+    app.run(host='0.0.0.0', port=5000, debug=debug_mode)
